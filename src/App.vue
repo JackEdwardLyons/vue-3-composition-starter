@@ -29,6 +29,10 @@ export default {
       capacity.value++;
     }
     return { capacity, increaseCapacity };
+  },
+  mounted () {
+    /* eslint-disable */
+    console.log({ app: process.env.VUE_APP_STOCK_DATA_API_KEY })
   }
 };
 </script>
